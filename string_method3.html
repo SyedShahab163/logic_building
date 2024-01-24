@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // const str = ["orange","pineapple","mango","apple" ]
+       //  let str1 = []
+       // for(let a=str.length-1;a >= 0 ;a-- ){ 
+            ///for(let b=a;b >= 0 ;b-- ){ 
+               
+
+         //    document.write("<br/>")
+         //   document.write(str[b=])
+          //  document.write("<br/>")
+                
+          //  }
+   // }
+   const strings = ["apple", "orange", "pineapple", "mango"];
+const reversedStrings = [];
+
+for (let i = 0; i < strings.length; i++) {
+    document.write(reversedStrings);
+    let reversedString = "";
+    for (let j = strings[i].length - 1; j >= 0; j--) {
+        reversedString += strings[i][j];
+      //  document.write(reversedStrings);
+    }
+    reversedStrings.push(reversedString);
+  //  document.write(reversedStrings);
+}
+
+//document.write(reversedStrings);
+
+    </script>
+</body>
+</html>

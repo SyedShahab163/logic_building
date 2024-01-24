@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Soaping Method</title>
+</head>
+<body>
+    <script>
+        const nums = [0,1,0,3,12]
+        let a = [ ]
+                                                //nums[u] > nums[u+1]
+                                                 // nums[0] > nums[1]
+        for(let u = 0;u <= nums.length-4;u++){    
+           for(let u = 0;u <= nums.length;u++)  {                                                     // 0 > 1   
+            if(nums[u] <= nums[u + 1]){
+                    a  = nums[u]
+                    nums[u] = nums[u+1]
+                     nums[u+1] = a
+             document.write(nums)
+             //document.write(u)
+            document.write("<br/>")
+            }
+        }
+        }
+    </script>
+</body>
+</html>

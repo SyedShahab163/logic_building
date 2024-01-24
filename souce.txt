@@ -1,0 +1,36 @@
+const T = 7;
+const test_cases = [
+  [1, 1, 3],
+  [0, 2, 4],
+  [5, 5, 1],
+  [0, 1, 1],
+  [1, 1, 2],
+  [97, 1, 99],
+  [97, 1, 100]
+];
+
+for (let i = 0; i < T; i++) {
+  const S = test_cases[i][0];
+  const D = test_cases[i][1];
+  const K = test_cases[i][2];
+   console.log(S,'------',D,'-------',K)
+    
+  const S_ch = S * 2;
+  const D_ch = D * 2;
+  const t_cheese = S_ch + D_ch;
+  const Req_che = K;
+  const S_bun = S * 2;
+  const D_bun = D * 2;
+  const T_bun = S * 2 + D * 2;
+  const Req_bun = K + 1;
+  const S_p = S * 2; // Assuming S_patty is intended to be derived from S
+  const D_p = D * 2; // Assuming D_patty is intended to be derived from D
+  const t_patty = S_p + S_p; // Typo: should it be t_patty = S_p + D_p;?
+  const Req_patty = K;
+
+  if (Req_bun <= T_bun && Req_patty <= t_patty && Req_che <= t_cheese ) {
+    console.log("YES");
+  } else {
+    console.log("NO");
+  }
+}

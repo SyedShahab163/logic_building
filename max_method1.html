@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Define the maximum number in array</h1>
+    <!-- <h1>bhai kia scene hay</h1> -->
+
+    <script>
+        const arr = [2,5,20,10,11,19,15,21,1]
+           //8
+       let second_arr = [0,0  ]
+       let j = 0 
+     
+
+       
+        for (let  i=0; i <= arr.length ; i++) {     
+            if(arr[i]  > arr[i+1]){                  // ager (arr[i] bara ho arr[i+1] sa )
+                     //i = 0          
+             second_arr[j] = arr[i]                     //(2 > 5)
+                                                        //i = 1, (5 > 20)ab wo body me gay ga
+                                                        //i = 2, ( 20 > 10)
+// document.write(j,";;;;;;;;",second_arr[j],j++)       //i = 3 , (10 > 11)
+                                                        //i = 4,  (11.19)
+                                                        //i = 5 , (19 > 15)   
+                                                        //second condition                
+if(second_arr[j] > second_arr[j+1]){                     // (20 > 0)
+                                                        // second[20] > second_arr[19]]
+                                                        //   (20 > 19)
+                
+                 
+                document.write(second_arr[j])
+              //  document.write("<br/>")
+              ///  document.write(j)
+                document.write("<br/>")
+               // document.write(second_arr[j],"=========",j,) 
+               
+               // document.write("====after increament=====",j) 
+              
+                 }
+                 j++;
+                // document.write(j++)
+            }
+            
+             document.write("<br/>")
+        }
+        //pala hum ak aviable ko let karra ga or per hum aus me ak aviable ki value dala ga or per aus sa hum array ki value ko check karra ga ka kia 2 go hay less then hay 5 sa to wo chota hay 5 sa to wo override karday ka 2 to 5 
+    </script>
+</body>
+</html>
